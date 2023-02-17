@@ -35,11 +35,11 @@ cards:
 </section>
 
 <!-- More Complex Jekyll Loops -->
-<section class="center padded-5 grid">
+<section class="center padded-5 grid-spaceAround">
     <h3 class="col-12">More Complex Jekyll Loops</h3>
     <!--  Cards  -->
-    <div class="col-4_xs-12">
     {% for item in page.cards %}
+    <div class="col-4_xs-12">
         <div class="bg-yellow card">
           <h3>{{item.title}}</h3>
           <h4>{{item.subtitle}}</h4>
