@@ -25,6 +25,22 @@ h1 {
 h2 {
     font-weight: 200;
     text-align: center;
-    margin-top: 1em;
+    margin: 5%;
     color: #af6828;
+}
+
+h3 {
+    margin-bottom: 1em;
+}
+
+/* Reusable Utility Classes */
+.center {text-align: center;}
+
+/* Utility Classes */
+.card {
+    text-align: center;
+    border: 1px solid #7d7c2c;
+    display: inline-block;
+    padding: 5%;
+    margin: 1rem;
 }

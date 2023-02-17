@@ -1,5 +1,24 @@
 ---
 layout: default
 title: Homepage
+vacation: 
+ - city: Ubud
+   description: spiritual
+ - city: Canggu
+   description: busy
+ - city: Uluwatu
+   description: paradise
+ - city: Sanur
+   description: retirement
 ---
 <h2>Welcome to your homepage!</h2>
+
+<section class="center">
+    <h3>Basic Jekyll Loops</h3>
+    {% for item in page.vacation %}
+    <div class="card">
+        <h4>{{item.city}}</h4>
+        <h5>{{item.description}}</h5>
+    </div>
+    {% endfor %}
+</section>
