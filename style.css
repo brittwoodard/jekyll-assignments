@@ -3,3 +3,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+    min-height: 30vh;
+    background-color: #d7b19a;
+    color: #f8e7dd;
+    padding: 5%;
+    text-align: center;
+}
+
+h1 {
+    font-family: didot;
+    font-size: 8vw;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: center;
+    margin-top: 1em;
+    color: #af6828;
+}
