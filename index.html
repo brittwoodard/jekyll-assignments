@@ -10,9 +10,20 @@ vacation:
    description: paradise
  - city: Sanur
    description: retirement
+cards:
+ - title: Coding<br>Challenge
+   subtitle: HTML & CSS
+   image: https://www.instituteofcode.com/assets/images/cutout-3.png
+ - title: Instagram<br>Challenge
+   subtitle: Social Foundations
+   image: https://www.instituteofcode.com/assets/images/cutout-2.png
+ - title: Photography<br>Challenge
+   subtitle: Mobile & DSLR
+   image: https://www.instituteofcode.com/assets/images/cutout-1.png
 ---
 <h2>Welcome to your homepage!</h2>
 
+<!-- Basic Jekyll Loops -->
 <section class="center">
     <h3>Basic Jekyll Loops</h3>
     {% for item in page.vacation %}
@@ -22,3 +33,19 @@ vacation:
     </div>
     {% endfor %}
 </section>
+
+<!-- More Complex Jekyll Loops -->
+<section class="center padded-5 grid">
+    <h3 class="col-12">More Complex Jekyll Loops</h3>
+    <!--  Cards  -->
+    <div class="col-4_xs-12">
+    {% for item in page.cards %}
+        <div class="bg-yellow card">
+          <h3>{{item.title}}</h3>
+          <h4>{{item.subtitle}}</h4>
+         <img src="{{item.image}}">
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
