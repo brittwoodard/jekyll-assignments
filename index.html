@@ -1,44 +1,57 @@
 ---
 layout: default
 title: Homepage
-vacation: 
- - city: Ubud
-   description: spiritual
- - city: Canggu
-   description: busy
- - city: Uluwatu
-   description: paradise
- - city: Sanur
-   description: retirement
+vacation:
+   -
+      city: Ubud
+      description: spiritual
+   -
+      city: Canggu
+      description: busy
+   -
+      city: Uluwatu
+      description: paradise
+   -
+      city: Sanur
+      description: retirement
 cards:
- - title: Coding<br>Challenge
-   subtitle: HTML & CSS
-   image: https://www.instituteofcode.com/assets/images/cutout-3.png
- - title: Instagram<br>Challenge
-   subtitle: Social Foundations
-   image: https://www.instituteofcode.com/assets/images/cutout-2.png
- - title: Photography<br>Challenge
-   subtitle: Mobile & DSLR
-   image: https://www.instituteofcode.com/assets/images/cutout-1.png
+   -
+      title: Coding<br>Challenge
+      subtitle: HTML & CSS
+      image: https://www.instituteofcode.com/assets/images/cutout-3.png
+   -
+      title: Instagram<br>Challenge
+      subtitle: Social Foundations
+      image: https://www.instituteofcode.com/assets/images/cutout-2.png
+   -
+      title: Photography<br>Challenge
+      subtitle: Mobile & DSLR
+      image: https://www.instituteofcode.com/assets/images/cutout-1.png
 gallery:
- - column-size: col-6
-   aspect-ratio: square
-   background-image: /images/jekyll-hw-1.jpg
- - column-size: col-6
-   aspect-ratio: square
-   background-image: /images/jekyll-hw-1.jpg
- - column-size: col-12
-   aspect-ratio: landscape
-   background-image: /images/jekyll-hw-1.jpg
- - column-size: col-4
-   aspect-ratio: portrait 
-   background-image: /images/jekyll-hw-1.jpg
- - column-size: col-4
-   aspect-ratio: portrait 
-   background-image: /images/jekyll-hw-1.jpg
- - column-size: col-4
-   aspect-ratio: portrait 
-   background-image: /images/jekyll-hw-1.jpg
+   -
+      column-size: col-6
+      aspect-ratio: square
+      background-image: /images/jekyll-hw-1.jpg
+   -
+      column-size: col-6
+      aspect-ratio: square
+      background-image: /uploads/jekyll-hw-7.jpg
+   -
+      column-size: col-12
+      aspect-ratio: landscape
+      background-image: /uploads/jekyll-hw-5.jpg
+   -
+      column-size: col-4
+      aspect-ratio: portrait
+      background-image: /uploads/jekyll-hw-4.jpg
+   -
+      column-size: col-4
+      aspect-ratio: portrait
+      background-image: /uploads/jekyll-hw-3.jpg
+   -
+      column-size: col-4
+      aspect-ratio: portrait
+      background-image: /uploads/jekyll-hw-2.jpg
 ---
 <h2>Welcome to your homepage!</h2>
 
@@ -62,10 +75,10 @@ gallery:
         <div class="bg-yellow card">
           <h3>{{item.title}}</h3>
           <h4>{{item.subtitle}}</h4>
-         <img src="{{item.image}}">
+         <img src="{{item.image}}" />
         </div>
       </div>
-    </div>
+    
     {% endfor %}
   </section>
 
