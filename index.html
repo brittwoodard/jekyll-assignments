@@ -27,8 +27,8 @@ cards:
       title: Photography<br>Challenge
       subtitle: Mobile & DSLR
       image: https://www.instituteofcode.com/assets/images/cutout-1.png
-popup-gallery: true
-gallery-background: bg-dark
+popup-gallery: false
+gallery-background: bg-light
 gallery:
    -
       column-size: col-6_xs-12
@@ -88,7 +88,7 @@ gallery:
 
   <!-- Responsive Image Gallery -->
   {% if page.popup-gallery == true %}
-  <section class="grid center padded-5">
+  <section class="grid center padded-5 {{page.gallery-background}}">
     <div class="col-12">
       <h3>Responsive Standard Image Gallery</h3>
     </div>
@@ -102,8 +102,8 @@ gallery:
   </section>
 
     <!-- Responsive Image Gallery -->
-    <section class="center padded-5">
-      <h3>Responsive Standard Image Gallery</h3>
+    <section class="center padded-5 {{page.gallery-background}}">
+      <h3>Responsive Popup Image Gallery</h3>
       <div class="gallery grid" id="lightgallery">
         {% for item in page.gallery %}
       
@@ -116,3 +116,4 @@ gallery:
         {% endfor %}
       </div>
     </section>
+    {% endif %}
