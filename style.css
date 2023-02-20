@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+[class*="col-"], 
+[class*="col_"], 
+[class~="col"] {
+  padding: 0;
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
@@ -42,6 +48,8 @@ img {
 /* Reusable Utility Classes */
 .center {text-align: center;}
 
+.padded-5 {padding: 5%;}
+
 .margin-b-2 {margin-bottom: 2em;}
 
 /* Utility Classes */
@@ -56,3 +64,63 @@ img {
 .card:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+/* Image Gallery Utility Classes */
+.portrait-tall {padding-bottom: 175%;}
+.portrait {padding-bottom: 125%;}
+.square {padding-bottom: 100%;}
+.landscape {padding-bottom: 66%;}
+.landscape-wide {padding-bottom: 56%;}
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #9877cd;
+  background-image: url('/images/jekyll-hw-1.jpg');
+}
+
+/* .bg-1 {
+  background-image: url('https://source.unsplash.com/dLFmwIOGNYo');
+  background-position: 50% 50%;
+}
+
+.bg-2 {
+  background-image: url('https://source.unsplash.com/dqx3HQDrXuw');
+  background-position: 50% 100%;
+}
+
+.bg-3 {
+  background-image: url('https://source.unsplash.com//FTYgqLeseI4');
+  background-position: 100% 50%;
+}
+
+.bg-4 {
+  background-image: url('https://source.unsplash.com/pr0I-DUB5eA');
+  background-position: 50% 50%;
+}
+
+.bg-5 {
+  background-image: url('https://source.unsplash.com/SavQfLRm4Do');
+  background-position: 100% 50%;
+}
+
+.bg-6 {
+  background-image: url('https://source.unsplash.com/mwipq6UrDU8');
+  background-position: 50% 50%;
+}
+
+.bg-7 {
+  background-image: url('https://source.unsplash.com/kvWutHgpKI4');
+  background-position: 50% 4%;
+}
+
+.bg-8 {
+  background-image: url('https://source.unsplash.com/BqIlpaeRA5A');
+  background-position: 50% 100%;
+}
+
+.bg-9 {
+  background-image: url('https://source.unsplash.com/Dr8jO199ORY');
+  background-position: 50% 50%;
+} */

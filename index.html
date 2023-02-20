@@ -20,6 +20,22 @@ cards:
  - title: Photography<br>Challenge
    subtitle: Mobile & DSLR
    image: https://www.instituteofcode.com/assets/images/cutout-1.png
+gallery:
+ - column-size: col-6
+   aspect-ratio: square
+   background-image: /images/jekyll-hw-1.jpg
+ - column-size: col-6
+   aspect-ratio: square
+   background-image: /images/jekyll-hw-1.jpg
+ - column-size: col-12
+   aspect-ratio: landscape
+   background-image: /images/jekyll-hw-1.jpg
+ - column-size: col-6
+   aspect-ratio: portrait
+   background-image: /images/jekyll-hw-1.jpg
+- column-size: col-6
+   aspect-ratio: portrait
+   background-image: /images/jekyll-hw-1.jpg
 ---
 <h2>Welcome to your homepage!</h2>
 
@@ -50,13 +66,21 @@ cards:
     {% endfor %}
   </section>
 
+  
+
   <!-- Responsive Image Gallery -->
-  <section class="grid gallery center">
-    <h3>Responsive Image Gallery</h3>
-    <div class="col-6_xs-12">
-      <div class="square bg-image bg-1"></div>
+  <section class="grid center padded-5">
+    <div class="col-12">
+      <h3>Responsive Image Gallery</h3>
     </div>
-    <div class="col-6_xs-12">
+
+    {% for item in page.gallery %}
+    <div class="{{item.column-size}}">
+      <div class="{{item.aspect-ratio}} bg-image" style="background-image: url('{{item.background-image}}');"></div>
+    </div>
+    {% endfor %}
+    
+    <!-- <div class="col-6_xs-12">
       <div class="square bg-image bg-2"></div>
     </div>
     <div class="col-3_xs-6">
@@ -79,5 +103,5 @@ cards:
     </div>
     <div class="col-4_xs-6">
       <div class="square bg-image bg-9"></div>
-    </div>
+    </div> -->
   </section>
