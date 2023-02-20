@@ -24,7 +24,7 @@ cards:
 <h2>Welcome to your homepage!</h2>
 
 <!-- Basic Jekyll Loops -->
-<section class="center">
+<section class="center margin-b-2">
     <h3>Basic Jekyll Loops</h3>
     {% for item in page.vacation %}
     <div class="card">
@@ -35,7 +35,7 @@ cards:
 </section>
 
 <!-- More Complex Jekyll Loops -->
-<section class="center padded-5 grid-spaceAround">
+<section class="center padded-5 grid-spaceAround margin-b-2">
     <h3 class="col-12">More Complex Jekyll Loops</h3>
     <!--  Cards  -->
     {% for item in page.cards %}
@@ -48,4 +48,36 @@ cards:
       </div>
     </div>
     {% endfor %}
+  </section>
+
+  <!-- Responsive Image Gallery -->
+  <section class="grid gallery center">
+    <h3>Responsive Image Gallery</h3>
+    <div class="col-6_xs-12">
+      <div class="square bg-image bg-1"></div>
+    </div>
+    <div class="col-6_xs-12">
+      <div class="square bg-image bg-2"></div>
+    </div>
+    <div class="col-3_xs-6">
+      <div class="portrait-tall bg-image bg-3"></div>
+    </div>
+    <div class="col-3_xs-6">
+      <div class="portrait-tall bg-image bg-4"></div>
+    </div>
+    <div class="col-3_xs-12">
+      <div class="portrait-tall bg-image bg-5"></div>
+    </div>
+    <div class="col-3_xs-12">
+      <div class="portrait-tall bg-image bg-6"></div>
+    </div>
+    <div class="col-4_xs-12">
+      <div class="square bg-image bg-7"></div>
+    </div>
+    <div class="col-4_xs-6">
+      <div class="square bg-image bg-8"></div>
+    </div>
+    <div class="col-4_xs-6">
+      <div class="square bg-image bg-9"></div>
+    </div>
   </section>

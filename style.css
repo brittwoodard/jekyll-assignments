@@ -30,7 +30,7 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 1em;
+    padding: 1em 0;
 }
 
 img {
@@ -41,6 +41,8 @@ img {
 
 /* Reusable Utility Classes */
 .center {text-align: center;}
+
+.margin-b-2 {margin-bottom: 2em;}
 
 /* Utility Classes */
 .card {
