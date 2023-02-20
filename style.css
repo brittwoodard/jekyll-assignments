@@ -52,6 +52,16 @@ img {
 
 .margin-b-2 {margin-bottom: 2rem;}
 
+.bg-light {
+  background-color: #eedfd2;
+  color: #a86426
+}
+
+.bg-dark {
+  background-color: #a86426;
+  color: #eedfd2;
+}
+
 /* Utility Classes */
 .card {
     text-align: center;

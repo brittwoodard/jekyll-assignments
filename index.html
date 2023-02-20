@@ -27,31 +27,33 @@ cards:
       title: Photography<br>Challenge
       subtitle: Mobile & DSLR
       image: https://www.instituteofcode.com/assets/images/cutout-1.png
+popup-gallery: true
+gallery-background: bg-dark
 gallery:
    -
-      column-size: col-6
+      column-size: col-6_xs-12
       aspect-ratio: square
-      background-image: /images/jekyll-hw-1.jpg
+      background_image: /images/jekyll-hw-1.jpg
    -
-      column-size: col-6
+      column-size: col-6_xs-12
       aspect-ratio: square
-      background-image: /uploads/jekyll-hw-7.jpg
+      background_image: /uploads/jekyll-hw-7.jpg
    -
       column-size: col-12
       aspect-ratio: landscape
-      background-image: /uploads/jekyll-hw-5.jpg
+      background_image: /uploads/jekyll-hw-5.jpg
    -
-      column-size: col-4
+      column-size: col-4_xs-6
       aspect-ratio: portrait
-      background-image: /uploads/jekyll-hw-4.jpg
+      background_image: /uploads/jekyll-hw-4.jpg
    -
-      column-size: col-4
+      column-size: col-4_xs-6
       aspect-ratio: portrait
-      background-image: /uploads/jekyll-hw-3.jpg
+      background_image: /uploads/jekyll-hw-3.jpg
    -
-      column-size: col-4
+      column-size: col-4_xs-12
       aspect-ratio: portrait
-      background-image: /uploads/jekyll-hw-2.jpg
+      background_image: /uploads/jekyll-hw-2.jpg
 ---
 <h2>Welcome to your homepage!</h2>
 
@@ -85,15 +87,32 @@ gallery:
   
 
   <!-- Responsive Image Gallery -->
+  {% if page.popup-gallery == true %}
   <section class="grid center padded-5">
     <div class="col-12">
-      <h3>Responsive Image Gallery</h3>
+      <h3>Responsive Standard Image Gallery</h3>
     </div>
 
     {% for item in page.gallery %}
     <div class="{{item.column-size}}">
-      <div class="{{item.aspect-ratio}} bg-image" style="background-image: url('{{item.background-image}}');"></div>
+      <div class="{{item.aspect-ratio}} bg-image" style="background-image: url('{{item.background_image}}');"></div>
     </div>
     {% endfor %}
-
+    {% else %}
   </section>
+
+    <!-- Responsive Image Gallery -->
+    <section class="center padded-5">
+      <h3>Responsive Standard Image Gallery</h3>
+      <div class="gallery grid" id="lightgallery">
+        {% for item in page.gallery %}
+      
+          <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
+            <div class="bg-image {{item.aspect-ratio}}" 
+                style="background-image: url('{{item.background_image}}');">
+            </div>
+          </a> 
+      
+        {% endfor %}
+      </div>
+    </section>
