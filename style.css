@@ -89,6 +89,15 @@ img {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.button {
+  text-decoration: none;
+  text-align: center;
+  text-transform: lowercase;
+  padding: 1rem 2rem;
+  color: #75762d;
+  border: 2px solid #75762d;
+}
+
 /* Image Gallery Utility Classes */
 .portrait-tall {padding-bottom: 175%;}
 .portrait {padding-bottom: 125%;}
